@@ -1,0 +1,41 @@
+# GraphQL Schema for AppSync API
+
+type Query {
+  # Get a single item by ID
+  getItem(id: ID!): Item
+  
+  # List all items
+  listItems(limit: Int, nextToken: String): ItemConnection
+}
+
+type Mutation {
+  # Create or update an item
+  putItem(id: ID!, name: String!, description: String): Item
+  
+  # Delete an item
+  deleteItem(id: ID!): Item
+}
+
+type Subscription {
+  # Subscribe to item updates
+  onItemUpdate(id: ID!): Item
+    @aws_subscribe(mutations: ["putItem", "deleteItem"])
+}
+
+# Item type definition
+type Item {
+  id: ID!
+  name: String!
+  description: String
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+# Connection type for pagination
+type ItemConnection {
+  items: [Item]
+  nextToken: String
+}
+
+# AWS DateTime scalar
+scalar AWSDateTime

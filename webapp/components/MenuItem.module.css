@@ -1,0 +1,30 @@
+.menuItem {
+  margin-bottom: 1.5rem;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.itemName {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.itemPrice {
+  color: #ffd700;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.itemDescription {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}

@@ -1,0 +1,89 @@
+.promotionalContainer {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  margin-top: 2rem;
+}
+
+.orangeBox {
+  width: 100%;
+  height: 120px;
+  background: #ff8c00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.deliveryIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.deliveryText {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.discountCircle {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffd700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}
+
+.discountNumber {
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.discountPercent {
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.discountOff {
+  color: #1a1a1a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .promotionalContainer {
+    width: 200px;
+    height: 120px;
+  }
+  
+  .discountCircle {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    right: -15px;
+  }
+  
+  .discountText {
+    font-size: 0.7rem;
+  }
+}

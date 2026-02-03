@@ -1,0 +1,108 @@
+.imageContainer {
+  position: absolute;
+  z-index: 5;
+}
+
+.imageContainer.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.imageContainer.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.imageContainer.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.outerBorder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid white;
+  padding: 4px;
+  background: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.innerBorder {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.imageCircle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #2a2a2a;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .outerBorder {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .imageContainer.top-left,
+  .imageContainer.top-right {
+    top: 10px;
+  }
+  
+  .imageContainer.top-left {
+    left: 10px;
+  }
+  
+  .imageContainer.top-right {
+    right: 10px;
+  }
+  
+  .imageContainer.bottom-right {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .outerBorder {
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
+  }
+  
+  .imageContainer {
+    position: relative;
+    margin: 1rem auto;
+  }
+  
+  .imageContainer.top-left,
+  .imageContainer.top-right,
+  .imageContainer.bottom-right {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}

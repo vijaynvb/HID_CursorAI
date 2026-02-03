@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logoCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffa500, #ff8c00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logoIcon {
+  font-size: 3rem;
+}
+
+.logoText {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.restaurantName {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff8c00;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1;
+}
+
+.restaurantSubtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 4px;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .restaurantName {
+    font-size: 2.5rem;
+  }
+  
+  .restaurantSubtitle {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .logoCircle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logoIcon {
+    font-size: 2rem;
+  }
+}

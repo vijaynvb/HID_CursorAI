@@ -1,0 +1,65 @@
+.categoryContainer {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.bordered {
+  border: 2px dashed #ffd700;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.banner {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: #ff8c00;
+}
+
+.banner.left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 50%);
+}
+
+.banner.center {
+  clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%);
+}
+
+.banner.right {
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+}
+
+.categoryTitle {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.drinksContainer {
+  margin-top: 2rem;
+}
+
+.drinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .drinksGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .categoryTitle {
+    font-size: 1rem;
+  }
+}

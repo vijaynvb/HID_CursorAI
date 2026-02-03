@@ -1,0 +1,120 @@
+.main {
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.chalkboardBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    #1a1a1a;
+  background-size: 100% 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.chalkboardBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(255, 255, 255, 0.015) 1px,
+      rgba(255, 255, 255, 0.015) 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(255, 255, 255, 0.015) 1px,
+      rgba(255, 255, 255, 0.015) 2px
+    );
+  opacity: 0.4;
+}
+
+.chalkboardBackground::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 60%, rgba(255, 255, 255, 0.02) 0%, transparent 60%);
+  opacity: 0.5;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.borderedSection {
+  border: 2px dashed #ffd700;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.promotionalSection {
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .menuGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .menuColumn:nth-child(2) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .menuGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .menuColumn:nth-child(2) {
+    grid-column: span 1;
+  }
+  
+  .promotionalSection {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}

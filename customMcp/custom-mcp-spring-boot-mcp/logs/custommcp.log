@@ -1,0 +1,8 @@
+2025-12-16T14:54:26.161+05:30  INFO 7064 --- [custommcp] [main] c.e.custommcp.CustommcpApplicationTests  : Starting CustommcpApplicationTests using Java 17.0.12 with PID 7064 (started by vijay in D:\01_LMS_Course_Content\cursor-ai\cursor-ai\20-customMcp\custom-mcp-spring-boot-mcp)
+2025-12-16T14:54:26.169+05:30  INFO 7064 --- [custommcp] [main] c.e.custommcp.CustommcpApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-12-16T14:54:27.652+05:30  INFO 7064 --- [custommcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-12-16T14:54:27.655+05:30  INFO 7064 --- [custommcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 2
+2025-12-16T14:54:27.656+05:30  INFO 7064 --- [custommcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-12-16T14:54:27.658+05:30  INFO 7064 --- [custommcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-12-16T14:54:27.662+05:30  INFO 7064 --- [custommcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-12-16T14:54:28.006+05:30  INFO 7064 --- [custommcp] [main] c.e.custommcp.CustommcpApplicationTests  : Started CustommcpApplicationTests in 2.399 seconds (process running for 4.143)

@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "spring-custom-mcp": {
+            "type": "stdio",
+            "command": "java",
+            "args": [
+                "-jar",
+                "<file-path-name>/target/custommcp-0.0.1-SNAPSHOT.jar"
+            ]
+        }
+    }
+}
